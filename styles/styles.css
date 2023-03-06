@@ -1,0 +1,1605 @@
+@font-face {
+  font-family: Objective;
+  src: url(../fonts/Objective_OTF/Objective-Bold.otf);
+  font-weight: 600;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: Objective;
+  src: url(../fonts/Objective_OTF/Objective-Medium.otf);
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: Objective;
+  src: url(../fonts/Objective_OTF/Objective-Regular.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* line 22, ../foxmind/html_css/Task_1.8/scss/styles.scss */
+html,
+body {
+  height: 100%;
+  font-family: 'Objective', sans-serif;
+  overflow-x: hidden;
+}
+
+/* line 29, ../foxmind/html_css/Task_1.8/scss/styles.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 33, ../foxmind/html_css/Task_1.8/scss/styles.scss */
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+/* line 2, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+.first-page {
+  height: 768px;
+  position: relative;
+  box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.26);
+}
+
+@media (max-width: 800px) {
+  /* line 2, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page {
+    height: auto;
+  }
+}
+
+/* line 9, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+.first-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(1.02deg, #4A99D3 -17.33%, rgba(74, 153, 211, 0) 75.91%), #FFFFFF;
+  opacity: 0.2;
+  transform: rotate(-180deg);
+  z-index: -1;
+}
+
+/* line 18, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+.first-page header {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15vw;
+  margin-right: 10vw;
+  margin-bottom: 100px;
+  padding-top: 45px;
+}
+
+@media (max-width: 1200px) {
+  /* line 18, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page header {
+    margin-right: 2vw;
+    margin-left: 5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 18, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page header {
+    margin-left: 2vw;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 18, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page header {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 0;
+  }
+}
+
+/* line 39, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+.first-page header .logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  color: #4A99D3;
+}
+
+/* line 46, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+.first-page header .upper-nav {
+  display: flex;
+  gap: 40px;
+  padding-right: 150px;
+}
+
+@media (max-width: 1200px) {
+  /* line 46, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page header .upper-nav {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  /* line 46, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page header .upper-nav {
+    padding-right: 0;
+    gap: 20px;
+  }
+}
+
+/* line 57, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+.first-page header .upper-nav .upper-nav-links {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  color: #0F001A;
+}
+
+/* line 62, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+.first-page header .upper-nav .upper-nav-links:hover {
+  color: #4A99D3;
+}
+
+/* line 66, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+.first-page header .upper-nav .active {
+  color: #4A99D3;
+}
+
+/* line 71, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+.first-page .intro {
+  margin-left: 15vw;
+  margin-right: 10vw;
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 1200px) {
+  /* line 71, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page .intro {
+    margin-left: 5vw;
+  }
+}
+
+@media (max-width: 800px) {
+  /* line 71, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page .intro {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 71, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page .intro {
+    margin-left: 2vw;
+  }
+}
+
+/* line 86, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+.first-page .intro-info {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+@media (max-width: 1200px) {
+  /* line 86, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page .intro-info {
+    gap: 25px;
+  }
+}
+
+/* line 93, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+.first-page .intro-info h1 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  letter-spacing: 0.02em;
+  color: #260041;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  /* line 93, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page .intro-info h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  /* line 93, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page .intro-info h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 375px) {
+  /* line 93, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page .intro-info h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+}
+
+/* line 111, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+.first-page .intro-info p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #260041;
+  margin-top: 0;
+}
+
+@media (max-width: 1200px) {
+  /* line 111, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page .intro-info p {
+    font-size: 16px;
+  }
+}
+
+/* line 121, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+.first-page .intro-info .app-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* line 124, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+.first-page .intro-info .app-links .app-link {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  background: #4A99D3;
+}
+
+/* line 129, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+.first-page .intro-info .app-links .app-link a {
+  position: relative;
+  top: 9px;
+  left: 9px;
+}
+
+@media (max-width: 500px) {
+  /* line 133, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page .intro-info .app-links .app-link a img {
+    width: 90%;
+    padding-top: 2px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 144, ../foxmind/html_css/Task_1.8/scss/section/_first-page-section.scss */
+  .first-page .intro-picture img {
+    width: 90%;
+  }
+}
+
+/* line 1, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help {
+  height: 1475px;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  /* line 1, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help {
+    height: 1400px;
+  }
+}
+
+@media (max-width: 800px) {
+  /* line 1, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help {
+    height: auto;
+  }
+}
+
+/* line 10, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards {
+  width: 82vw;
+  margin-left: 17vw;
+  margin-right: 17vw;
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  /* line 10, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help .cards {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  /* line 10, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+}
+
+/* line 30, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: #260041;
+  height: 138px;
+  width: 395px;
+  padding-top: 150px;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  /* line 30, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help .cards h2 {
+    height: auto;
+    margin-left: 5vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 30, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help .cards h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 30, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help .cards h2 {
+    width: auto;
+    padding-top: 0;
+    margin: 20px auto;
+    font-size: 24px;
+  }
+}
+
+/* line 55, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .card {
+  height: 525px;
+  width: 380px;
+  box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2);
+  border-radius: 10px;
+  padding-left: 48px;
+  padding-right: 48px;
+  position: absolute;
+  z-index: 2;
+}
+
+@media (max-width: 800px) {
+  /* line 55, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help .cards .card {
+    position: static;
+  }
+}
+
+/* line 67, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .card .stock {
+  padding-top: 48px;
+}
+
+/* line 70, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .card .ginger {
+  margin-top: -70px;
+}
+
+/* line 73, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .card h3 {
+  padding-top: 55px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.02vw;
+  color: #0F001A;
+}
+
+/* line 81, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0F001A;
+  opacity: 0.6;
+}
+
+/* line 88, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .card a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4A99D3;
+  padding-top: 60px;
+}
+
+/* line 94, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .card a img {
+  padding-left: 20px;
+  position: relative;
+  top: 7px;
+}
+
+/* line 101, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .send {
+  top: 162px;
+  left: 57vw;
+  z-index: 2;
+}
+
+@media (max-width: 1200px) {
+  /* line 101, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help .cards .send {
+    right: 10vw;
+  }
+}
+
+/* line 108, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .send::after {
+  content: url(../images/ellipses.png);
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  z-index: -2;
+}
+
+@media (max-width: 1200px) {
+  /* line 108, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help .cards .send::after {
+    display: none;
+  }
+}
+
+/* line 118, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .send::before {
+  content: '';
+  position: absolute;
+  background: white;
+  right: 0px;
+  width: 85px;
+  height: 85px;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+  /* line 118, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help .cards .send::before {
+    display: none;
+  }
+}
+
+/* line 133, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .receive {
+  top: 458px;
+  left: 23vw;
+  z-index: 2;
+}
+
+@media (max-width: 1200px) {
+  /* line 133, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help .cards .receive {
+    left: 10vw;
+  }
+}
+
+/* line 140, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .receive::after {
+  content: url(../images/ellipses.png);
+  position: absolute;
+  top: 216px;
+  left: -110px;
+  z-index: -2;
+}
+
+@media (max-width: 1200px) {
+  /* line 140, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help .cards .receive::after {
+    display: none;
+  }
+}
+
+/* line 150, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .receive::before {
+  content: '';
+  position: absolute;
+  background: white;
+  left: 0px;
+  top: 216px;
+  width: 48px;
+  height: 160px;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+  /* line 150, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help .cards .receive::before {
+    display: none;
+  }
+}
+
+/* line 165, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .buy {
+  top: 800px;
+  left: 57vw;
+}
+
+@media (max-width: 1200px) {
+  /* line 165, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help .cards .buy {
+    right: 10vw;
+  }
+}
+
+/* line 171, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .buy::after {
+  content: url(../images/ellipses.png);
+  position: absolute;
+  bottom: -75px;
+  right: -75px;
+  z-index: -2;
+}
+
+@media (max-width: 1200px) {
+  /* line 171, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help .cards .buy::after {
+    display: none;
+  }
+}
+
+/* line 181, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .buy::before {
+  content: '';
+  position: absolute;
+  background: white;
+  bottom: 0px;
+  right: 0px;
+  width: 85px;
+  height: 85px;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+  /* line 181, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .help .cards .buy::before {
+    display: none;
+  }
+}
+
+/* line 196, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .ellipse-send {
+  position: absolute;
+  z-index: -1;
+  right: 129px;
+  top: 100px;
+}
+
+/* line 202, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .ellipse-receive {
+  position: absolute;
+  z-index: -1;
+}
+
+/* line 206, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.help .cards .ellipse-buy {
+  position: absolute;
+  z-index: -1;
+}
+
+/* line 215, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.rect-help-top {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 141.31px;
+  height: 118.57px;
+  right: 16px;
+  border: 8px solid #4A99D3;
+  border-radius: 4px;
+}
+
+@media (max-width: 1200px) {
+  /* line 215, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .rect-help-top {
+    display: none;
+  }
+}
+
+/* line 227, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.rect-help-top::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 141.31px;
+  height: 118.57px;
+  top: 25px;
+  right: 32px;
+  border: 8px solid #4A99D3;
+  border-radius: 4px;
+}
+
+@media (max-width: 1200px) {
+  /* line 227, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .rect-help-top::before {
+    display: none;
+  }
+}
+
+/* line 241, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.rect-help-top::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 141.31px;
+  height: 118.57px;
+  top: 65px;
+  right: -70px;
+  border: 8px solid #4A99D3;
+  border-radius: 4px;
+}
+
+@media (max-width: 1200px) {
+  /* line 241, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .rect-help-top::after {
+    display: none;
+  }
+}
+
+/* line 257, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.rect-help-bot {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 141.31px;
+  height: 118.57px;
+  left: 16px;
+  bottom: -27px;
+  border: 8px solid #D3844A;
+  border-radius: 4px;
+  transform: rotate(-180deg);
+}
+
+@media (max-width: 1200px) {
+  /* line 257, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .rect-help-bot {
+    display: none;
+  }
+}
+
+/* line 271, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.rect-help-bot::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 141.31px;
+  height: 118.57px;
+  top: 25px;
+  right: 32px;
+  border: 8px solid #D3844A;
+  border-radius: 4px;
+  transform: rotate(-180deg);
+}
+
+@media (max-width: 1200px) {
+  /* line 271, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .rect-help-bot::before {
+    display: none;
+  }
+}
+
+/* line 286, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+.rect-help-bot::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 141.31px;
+  height: 118.57px;
+  top: 65px;
+  right: -70px;
+  border: 8px solid #D3844A;
+  border-radius: 4px;
+  transform: rotate(-180deg);
+}
+
+@media (max-width: 1200px) {
+  /* line 286, ../foxmind/html_css/Task_1.8/scss/section/_help-section.scss */
+  .rect-help-bot::after {
+    display: none;
+  }
+}
+
+/* line 1, ../foxmind/html_css/Task_1.8/scss/section/_how-section.scss */
+.how {
+  width: 100%;
+  background: rgba(74, 153, 211, 0.1);
+}
+
+@media (max-width: 1200px) {
+  /* line 1, ../foxmind/html_css/Task_1.8/scss/section/_how-section.scss */
+  .how {
+    height: auto;
+  }
+}
+
+/* line 8, ../foxmind/html_css/Task_1.8/scss/section/_how-section.scss */
+.how h3 {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 27px;
+  text-align: center;
+  color: #4A99D3;
+  padding-top: 95px;
+}
+
+@media (max-width: 500px) {
+  /* line 8, ../foxmind/html_css/Task_1.8/scss/section/_how-section.scss */
+  .how h3 {
+    margin: auto;
+  }
+}
+
+/* line 21, ../foxmind/html_css/Task_1.8/scss/section/_how-section.scss */
+.how .steps {
+  display: flex;
+  width: 65em;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+  gap: 100px;
+}
+
+@media (max-width: 1200px) {
+  /* line 21, ../foxmind/html_css/Task_1.8/scss/section/_how-section.scss */
+  .how .steps {
+    gap: 30px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 960px) {
+  /* line 21, ../foxmind/html_css/Task_1.8/scss/section/_how-section.scss */
+  .how .steps {
+    flex-direction: column;
+    gap: 0px;
+    width: auto;
+  }
+}
+
+/* line 38, ../foxmind/html_css/Task_1.8/scss/section/_how-section.scss */
+.how .steps .step {
+  text-align: center;
+}
+
+/* line 40, ../foxmind/html_css/Task_1.8/scss/section/_how-section.scss */
+.how .steps .step h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  color: #0F001A;
+}
+
+/* line 46, ../foxmind/html_css/Task_1.8/scss/section/_how-section.scss */
+.how .steps .step p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #0F001A;
+}
+
+/* line 1, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro {
+  margin-bottom: 120px;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  /* line 1, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro {
+    height: auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 1, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 12, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro .recommendations h2 {
+  width: 100%;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 27px;
+  text-align: center;
+  color: #0F001A;
+  padding-top: 150px;
+}
+
+@media (max-width: 1200px) {
+  /* line 12, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations h2 {
+    padding-top: 100px;
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 960px) {
+  /* line 12, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations h2 {
+    padding-top: 50px;
+  }
+}
+
+/* line 28, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro .recommendations .carousel {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  margin-top: -200px;
+}
+
+@media (max-width: 1200px) {
+  /* line 28, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel {
+    height: 550px;
+  }
+}
+
+@media (max-width: 700px) {
+  /* line 28, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel {
+    height: 700px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 28, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel {
+    height: 550px;
+  }
+}
+
+/* line 42, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro .recommendations .carousel .photo-rect {
+  position: relative;
+}
+
+/* line 44, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro .recommendations .carousel .photo-rect .carousel-photo {
+  position: absolute;
+  top: 181px;
+  left: 10vw;
+}
+
+@media (max-width: 1200px) {
+  /* line 44, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .photo-rect .carousel-photo {
+    top: 50px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 44, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .photo-rect .carousel-photo {
+    width: 200px;
+  }
+}
+
+/* line 59, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro .recommendations .carousel .photo-rect::after {
+  content: '';
+  position: absolute;
+  top: 300px;
+  width: 650px;
+  height: 400px;
+  background: rgba(74, 153, 211, 0.1);
+  border-radius: 0px 6px 6px 0px;
+}
+
+@media (max-width: 1200px) {
+  /* line 59, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .photo-rect::after {
+    top: 142px;
+    left: 0;
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 960px) {
+  /* line 59, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .photo-rect::after {
+    width: 400px;
+  }
+}
+
+@media (max-width: 700px) {
+  /* line 59, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .photo-rect::after {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 59, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .photo-rect::after {
+    top: 112px;
+    left: 0;
+    width: 300px;
+    height: 200px;
+  }
+}
+
+/* line 88, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro .recommendations .carousel .slide {
+  position: absolute;
+  left: 54vw;
+  top: 400px;
+}
+
+@media (max-width: 1200px) {
+  /* line 88, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .slide {
+    position: absolute;
+    right: 4vw;
+    top: 150px;
+  }
+}
+
+@media (max-width: 700px) {
+  /* line 88, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .slide {
+    left: 4vw;
+    top: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 88, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .slide {
+    left: 4vw;
+    top: 320px;
+  }
+}
+
+/* line 105, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro .recommendations .carousel .slide p {
+  max-width: 418px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0F001A;
+  opacity: 0.5;
+}
+
+@media (max-width: 700px) {
+  /* line 105, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .slide p {
+    max-width: 100%;
+    font-size: 13px;
+  }
+}
+
+/* line 117, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro .recommendations .carousel .slide h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  color: #0F001A;
+}
+
+@media (max-width: 415px) {
+  /* line 123, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .slide img {
+    width: 10vw;
+  }
+}
+
+/* line 129, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro .recommendations .carousel .buttons {
+  position: absolute;
+  right: 17vw;
+  bottom: 0;
+  left: auto;
+}
+
+@media (max-width: 1200px) {
+  /* line 129, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .buttons {
+    right: 5vw;
+    top: 400px;
+  }
+}
+
+@media (max-width: 700px) {
+  /* line 129, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .buttons {
+    right: 10vw;
+    bottom: 30px;
+    top: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 129, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .buttons {
+    bottom: 0px;
+  }
+}
+
+/* line 146, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro .recommendations .carousel .buttons .btn-left {
+  width: 80px;
+  height: 80px;
+  background: #4A99D3;
+  border-radius: 4px 0px 0px 4px;
+  border: transparent;
+}
+
+@media (max-width: 700px) {
+  /* line 146, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .buttons .btn-left {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* line 157, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro .recommendations .carousel .buttons .btn-right {
+  width: 80px;
+  height: 80px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  border: transparent;
+}
+
+@media (max-width: 700px) {
+  /* line 157, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .recommendations .carousel .buttons .btn-right {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* line 172, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro .download {
+  width: 100%;
+  padding-left: 12vw;
+  padding-right: 17vw;
+  padding-top: 160px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+
+@media (max-width: 1200px) {
+  /* line 172, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .download {
+    padding-top: 0;
+    padding-left: 5vw;
+  }
+}
+
+@media (max-width: 960px) {
+  /* line 172, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .download {
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 191, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .download .outro-info {
+    width: 100%;
+  }
+}
+
+/* line 199, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro .download .outro-info h2 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 26px;
+  text-align: center;
+  color: #0F001A;
+}
+
+/* line 206, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro .download .outro-info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #0F001A;
+  opacity: 0.5;
+}
+
+/* line 214, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro .download .outro-info .app-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 500px) {
+  /* line 219, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .download .outro-info .app-links .google-play a img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 228, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .download .outro-info .app-links .app-store a img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 238, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro .download .outro-picture img {
+    width: 100%;
+  }
+}
+
+/* line 247, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.outro::before {
+  content: url(../images/ellipses.png);
+  position: absolute;
+  right: 0;
+  top: 380px;
+}
+
+@media (max-width: 1200px) {
+  /* line 247, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+  .outro::before {
+    display: none;
+  }
+}
+
+/* line 257, ../foxmind/html_css/Task_1.8/scss/section/_outro-section.scss */
+.slides {
+  display: none;
+}
+
+/* line 1, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+footer {
+  width: 100%;
+  position: relative;
+}
+
+@media (max-width: 960px) {
+  /* line 1, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer {
+    height: 350px;
+  }
+}
+
+@media (max-width: 800px) {
+  /* line 1, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer {
+    height: auto;
+  }
+}
+
+/* line 11, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+footer .footer-wrapper {
+  background: #4A99D3;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 2;
+  height: 350px;
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  /* line 11, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper {
+    height: 480px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 11, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper {
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+/* line 26, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+footer .footer-wrapper .logo {
+  font-family: 'Objective';
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 35px;
+  padding-left: 9vw;
+  padding-top: 55px;
+}
+
+@media (max-width: 1200px) {
+  /* line 26, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .logo {
+    padding-left: 5vw;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 26, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .logo {
+    padding-left: 3vw;
+  }
+}
+
+/* line 40, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+footer .footer-wrapper .bottom-nav {
+  margin-left: 9vw;
+}
+
+@media (max-width: 1200px) {
+  /* line 40, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .bottom-nav {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+}
+
+@media (max-width: 960px) {
+  /* line 40, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .bottom-nav {
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+}
+
+@media (max-width: 800px) {
+  /* line 40, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .bottom-nav {
+    margin-left: 12vw;
+    margin-right: 5vw;
+  }
+}
+
+@media (max-width: 670px) {
+  /* line 40, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .bottom-nav {
+    margin-left: 5vw;
+  }
+}
+
+/* line 57, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+footer .footer-wrapper .bottom-nav .nav-links {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+@media (max-width: 1200px) {
+  /* line 57, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .bottom-nav .nav-links {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 57, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .bottom-nav .nav-links {
+    gap: 5px;
+  }
+}
+
+/* line 70, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+footer .footer-wrapper .bottom-nav .nav-links .links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+/* line 75, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+footer .footer-wrapper .bottom-nav .nav-links .links .header-links {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19px;
+  padding-top: 55px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid white;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 390px) {
+  /* line 84, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .bottom-nav .nav-links .links .quick {
+    margin-top: -19px;
+  }
+}
+
+/* line 92, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+footer .footer-wrapper .subscribtion {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 37px;
+  margin-left: 5vw;
+  width: 394px;
+}
+
+@media (max-width: 1200px) {
+  /* line 92, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .subscribtion {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  /* line 92, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .subscribtion {
+    position: absolute;
+    bottom: 50px;
+    left: 5vw;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 92, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .subscribtion {
+    left: auto;
+    bottom: auto;
+    position: static;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: fit-content;
+  }
+}
+
+/* line 117, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+footer .footer-wrapper .subscribtion input {
+  background: #FFFFFF;
+  border-radius: 3px;
+  width: 250px;
+  height: 50px;
+  border: transparent;
+}
+
+/* line 123, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+footer .footer-wrapper .subscribtion input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  opacity: 0.5;
+  padding-left: 10px;
+}
+
+@media (max-width: 1200px) {
+  /* line 117, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .subscribtion input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  /* line 117, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .subscribtion input {
+    width: 250px;
+  }
+}
+
+@media (max-width: 420px) {
+  /* line 117, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .subscribtion input {
+    width: 180px;
+  }
+}
+
+/* line 141, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+footer .footer-wrapper .subscribtion button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  color: #4A99D3;
+  width: 116px;
+  height: 50px;
+  border: transparent;
+  border-radius: 3px;
+}
+
+@media (max-width: 420px) {
+  /* line 141, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .subscribtion button {
+    width: 100px;
+  }
+}
+
+/* line 155, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+footer .footer-wrapper .footer-under {
+  border-top: 1px white solid;
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  padding-left: 9vw;
+  padding-right: 9vw;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  /* line 155, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .footer-under {
+    padding-left: 5vw;
+  }
+}
+
+@media (max-width: 960px) {
+  /* line 155, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .footer-under {
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 155, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  footer .footer-wrapper .footer-under {
+    padding-left: 5vw;
+    position: relative;
+  }
+}
+
+/* line 175, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+footer .footer-wrapper .footer-under .social {
+  width: 135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 185, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+.rect-footer-right {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 141.31px;
+  height: 118.57px;
+  right: 16px;
+  top: -150px;
+  border: 8px solid #D3844A;
+  border-radius: 4px;
+}
+
+@media (max-width: 1200px) {
+  /* line 185, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  .rect-footer-right {
+    display: none;
+  }
+}
+
+/* line 198, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+.rect-footer-right::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 141.31px;
+  height: 118.57px;
+  top: 25px;
+  right: 32px;
+  border: 8px solid #D3844A;
+  border-radius: 4px;
+}
+
+@media (max-width: 1200px) {
+  /* line 198, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  .rect-footer-right::before {
+    display: none;
+  }
+}
+
+/* line 212, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+.rect-footer-right::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 141.31px;
+  height: 118.57px;
+  top: 65px;
+  right: -70px;
+  border: 8px solid #D3844A;
+  border-radius: 4px;
+}
+
+@media (max-width: 1200px) {
+  /* line 212, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  .rect-footer-right::after {
+    display: none;
+  }
+}
+
+/* line 228, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+.rect-footer-left {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 141.31px;
+  height: 118.57px;
+  left: 16px;
+  top: -75px;
+  border: 8px solid #4A99D3;
+  border-radius: 4px;
+  transform: rotate(-180deg);
+}
+
+@media (max-width: 1200px) {
+  /* line 228, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  .rect-footer-left {
+    display: none;
+  }
+}
+
+/* line 242, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+.rect-footer-left::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 141.31px;
+  height: 118.57px;
+  top: 25px;
+  right: 32px;
+  border: 8px solid #4A99D3;
+  border-radius: 4px;
+  transform: rotate(-180deg);
+}
+
+@media (max-width: 1200px) {
+  /* line 242, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  .rect-footer-left::before {
+    display: none;
+  }
+}
+
+/* line 257, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+.rect-footer-left::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  width: 141.31px;
+  height: 118.57px;
+  top: 65px;
+  right: -70px;
+  border: 8px solid #4A99D3;
+  border-radius: 4px;
+  transform: rotate(-180deg);
+}
+
+@media (max-width: 1200px) {
+  /* line 257, ../foxmind/html_css/Task_1.8/scss/footer/_footer.scss */
+  .rect-footer-left::after {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

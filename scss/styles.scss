@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Objective;
+    src: url(../fonts/Objective_OTF/Objective-Bold.otf);
+    font-weight: 600;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: Objective;
+    src: url(../fonts/Objective_OTF/Objective-Medium.otf);
+    font-weight: 500;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: Objective;
+    src: url(../fonts/Objective_OTF/Objective-Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Objective', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a:hover,
+button:hover {
+    cursor: pointer;
+}
+
+@import './section/first-page-section.scss';
+
+@import './section/help-section.scss';
+
+@import './section/how-section.scss';
+
+@import './section/outro-section.scss';
+
+@import './footer/footer.scss';

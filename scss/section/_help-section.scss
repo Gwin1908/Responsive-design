@@ -1,0 +1,302 @@
+.help {
+    height: 1475px;
+    position: relative;
+    @media (max-width: 1200px) {
+        height: 1400px;
+    }
+    @media (max-width: 800px) {
+        height: auto;
+    }
+    .cards {
+        width: 82vw;
+        margin-left: 17vw;
+        margin-right: 17vw; 
+        z-index: 1;
+        @media (max-width: 1200px) {
+            width: auto;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+        }
+        h2 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 46px;
+            letter-spacing: 0.05em;
+            color: #260041;
+            height: 138px;
+            width: 395px;
+            padding-top: 150px;
+            margin: 0;
+            @media (max-width: 1200px) {
+                height: auto;
+                margin-left: 5vw;
+            }
+            @media (max-width: 1200px) {
+                text-align: center;
+            }
+            @media (max-width: 500px) {
+                width: auto;
+                padding-top: 0;
+                margin: 20px auto;
+                font-size: 24px;
+            }
+        }
+        .card {
+            height: 525px;
+            width: 380px;
+            box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2);
+            border-radius: 10px;
+            padding-left: 48px;
+            padding-right: 48px;
+            position: absolute;
+            z-index: 2;
+            @media (max-width: 800px) {
+                position: static;
+            }
+            .stock{
+                padding-top: 48px;
+            }
+            .ginger {
+                margin-top: -70px;
+            }
+            h3 {
+                padding-top: 55px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;                            
+                letter-spacing: 0.02vw;
+                color: #0F001A;
+            }
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #0F001A;
+                opacity: 0.6;
+            }
+            a {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 30px;
+                color: #4A99D3;
+                padding-top: 60px;
+                img {
+                    padding-left: 20px;
+                    position: relative;
+                    top: 7px;
+                }
+            }
+        }
+        .send {
+            top: 162px;
+            left: 57vw;
+            z-index: 2;
+            @media (max-width: 1200px) {
+                right: 10vw;
+            }
+            &::after {
+                content: url(../images/ellipses.png);
+                position: absolute;
+                top: -75px;
+                right: -75px;
+                z-index: -2;
+                @media (max-width: 1200px) {
+                    display: none;
+                }
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                background: white;
+                right: 0px;
+                width: 85px;
+                height: 85px;
+                z-index: -1;
+                border-radius: 5px;
+                @media (max-width: 1200px) {
+                    display: none;
+                }
+            }
+        }
+
+        .receive {
+            top: 458px;
+            left: 23vw;
+            z-index: 2;
+            @media (max-width: 1200px) {
+                left: 10vw;
+            }
+            &::after {
+                content: url(../images/ellipses.png);
+                position: absolute;
+                top: 216px;
+                left: -110px;
+                z-index: -2;
+                @media (max-width: 1200px) {
+                    display: none;
+                }
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                background: white;
+                left: 0px;
+                top: 216px;
+                width: 48px;
+                height: 160px;
+                z-index: -1;
+                border-radius: 5px;
+                @media (max-width: 1200px) {
+                    display: none;
+                }
+            }
+        }
+        .buy {
+            top: 800px;
+            left: 57vw;
+            @media (max-width: 1200px) {
+                right: 10vw;
+            }
+            &::after {
+                content: url(../images/ellipses.png);
+                position: absolute;
+                bottom: -75px;
+                right: -75px;
+                z-index: -2;
+                @media (max-width: 1200px) {
+                    display: none;
+                }
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                background: white;
+                bottom: 0px;
+                right: 0px;
+                width: 85px;
+                height: 85px;
+                z-index: -1;
+                border-radius: 5px;
+                @media (max-width: 1200px) {
+                    display: none;
+                }
+            }
+        }
+        .ellipse-send {
+            position: absolute;
+            z-index: -1;
+            right: 129px;
+            top: 100px;
+        }
+        .ellipse-receive {
+            position: absolute;
+            z-index: -1;
+        }
+        .ellipse-buy {
+            position: absolute;
+            z-index: -1;
+        }
+    }
+}        
+    
+    
+
+.rect-help-top {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    width: 141.31px;
+    height: 118.57px;
+    right: 16px;
+    border: 8px solid #4A99D3;
+    border-radius: 4px;
+    @media (max-width: 1200px) {
+        display: none;
+    }
+    &::before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        width: 141.31px;
+        height: 118.57px;
+        top: 25px;
+        right: 32px;
+        border: 8px solid #4A99D3;
+        border-radius: 4px;
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+    &::after {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        width: 141.31px;
+        height: 118.57px;
+        top: 65px;
+        right: -70px;
+        border: 8px solid #4A99D3;
+        border-radius: 4px;
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+}
+
+.rect-help-bot {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    width: 141.31px;
+    height: 118.57px;
+    left: 16px;
+    bottom: -27px;
+    border: 8px solid #D3844A;
+    border-radius: 4px;
+    transform: rotate(-180deg);
+    @media (max-width: 1200px) {
+        display: none;
+    }
+    &::before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        width: 141.31px;
+        height: 118.57px;
+        top: 25px;
+        right: 32px;
+        border: 8px solid #D3844A;
+        border-radius: 4px;
+        transform: rotate(-180deg);
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+    &::after {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        width: 141.31px;
+        height: 118.57px;
+        top: 65px;
+        right: -70px;
+        border: 8px solid #D3844A;
+        border-radius: 4px;
+        transform: rotate(-180deg);
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+}
+
